@@ -42,7 +42,13 @@ int main(){
     // printf("this is my new email %s\n", email);
 
     bool isOnline = true;
-    printf("Is Online %d\n", isOnline);
+    // printf("Is Online %d\n", isOnline);
+
+    if(isOnline){
+        printf("You are online");
+    } else {
+        printf("You are offline");
+    }
 
 
     return 0;
