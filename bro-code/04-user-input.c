@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
 
@@ -16,13 +17,18 @@ int main(){
     printf("Enter your grade: ");
     scanf(" %c", &grade);
 
-    printf("Enter your FirstName: ");
-    scanf("%s", &name);
+    getchar();
+    // check what happened when we log name before other variables
 
+    printf("Enter your Full name: ");
+    // scanf("%s", &name);
+    fgets(name, sizeof(name), stdin);
+    name[strlen(name) - 1] = '\0';
+
+    printf("name is %s\n", name); 
     printf("age is %d\n", age);
     printf("gpa is %.2f\n", gpa);
     printf("grade is %c\n", grade);
-    printf("name is %s\n", name);
 
     return 0;
 }
