@@ -29,11 +29,17 @@ int main(){
     fgets(adjective3, sizeof(adjective3), stdin);
     adjective3[strlen(adjective3) - 1] = '\0';
 
-    printf("%s\n", &noun);
-    printf("%s\n", &verb);
-    printf("%s\n", &adjective1);
-    printf("%s\n", &adjective2);
-    printf("%s\n", &adjective3);
+    // printf("%s\n", &noun);
+    // printf("%s\n", &verb);
+    // printf("%s\n", &adjective1);
+    // printf("%s\n", &adjective2);
+    // printf("%s\n", &adjective3);
+
+    printf("\nToday I went to a %s zoo.\n", &adjective1);
+    printf("In an exhibit, I saw a %s.\n", &noun);
+    printf("%s was %s and %s!\n", &noun, &adjective2, verb);
+    printf("I was %s!\n", &adjective3);
+
 
     return 0;
 }
