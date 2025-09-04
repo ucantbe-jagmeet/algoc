@@ -35,10 +35,10 @@ int main(){
     // printf("%s\n", &adjective2);
     // printf("%s\n", &adjective3);
 
-    printf("\nToday I went to a %s zoo.\n", &adjective1);
-    printf("In an exhibit, I saw a %s.\n", &noun);
-    printf("%s was %s and %s!\n", &noun, &adjective2, verb);
-    printf("I was %s!\n", &adjective3);
+    printf("\nToday I went to a %s zoo.\n", adjective1);
+    printf("In an exhibit, I saw a %s.\n", noun);
+    printf("%s was %s and %s!\n", noun, adjective2, verb);
+    printf("I was %s!\n", adjective3);
 
 
     return 0;
