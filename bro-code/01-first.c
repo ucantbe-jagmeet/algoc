@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main(){
+    // variable = A reusable container for a value, behaves as if it were the value it contains.
+
+    int age = 25;
+    int year = 2025;
+    int quantity = 2;
+
+    // printf("you are %d years old\n", age);
+    // printf("the year is %d\n", year);
+    // printf("You have ordered %d x items\n", quantity);
+
+
+    float gpa = 2.5;
+    float price = 19.99;
+    // printf("Your GPA is a fomat specifiers so %f\n", gpa);
+    // printf("Your prince is %f", price);
+
+
+    // doubles that store 15-16 digits after the decimal
+    double pi = 3.14159265358979;
+    // printf("The vlaue of pi is %.15lf", pi);
+
+
+    //character 
+    char grade = 'A';
+    // printf("Your grade is %c\n", grade);
+
+    // array
+    char name[] = "ben stokes";
+    char email[] = "fakemail@gmail.com";
+    // printf("Hello %s\n", name);
+    // printf("this is my new email %s\n", email);
+
+    bool isOnline = true;
+    printf("Is Online %d\n", isOnline);
+
+
+    return 0;
+}
