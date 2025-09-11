@@ -1,20 +1,21 @@
-
 #include <stdio.h>
-#include <string.h>
-void happyBirthday(char name[], int age) {
-    printf("\nHappy birthday %s and you are %d!", name, age);
+#include <math.h>
+
+int add(int x , int y) {
+    int result = x + y;
+    return result;
+}
+
+int sub(int x , int y) {
+    int result2 = x - y;
+    return result2;
 }
 
 int main() {
+    int result = add(3,4);
+    int result2 = sub(10,4);
 
-    char name[50] = "";
-    int age = 25;
-
-    printf(" Please Enter Your name:");
-    fgets(name, sizeof(name), stdin);
-    name[strlen(name) - 1] = '\0';
-
-    happyBirthday(name, age);
-
+    printf("%d\n", result);
+    printf("%d", result2);
     return 0;
 }

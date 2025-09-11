@@ -1,21 +1,21 @@
+
 #include <stdio.h>
-#include <math.h>
-
-int add(int x , int y) {
-    int result = x + y;
-    return result;
-}
-
-int sub(int x , int y) {
-    int result2 = x - y;
-    return result2;
+#include <string.h>
+void happyBirthday(char name[], int age) {
+    printf("\nHappy birthday %s and you are %d!", name, age);
 }
 
 int main() {
-    int result = add(3,4);
-    int result2 = sub(10,4);
 
-    printf("%d\n", result);
-    printf("%d", result2);
+    char name[50] = "";
+    int age = 25;
+
+    printf(" Please Enter Your name:");
+    fgets(name, sizeof(name), stdin);
+    name[strlen(name) - 1] = '\0';
+
+    happyBirthday(name, age);
+
     return 0;
+
 }
