@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 void print (char* C){
-    int i = 0;
-    while (C[i] != '\0') {
-        printf("%c", C[i]);
-        i++;
+    while (*C != '\0') {
+        printf("%c", *C);
+        C++;
     }
     printf("\n");
 }
