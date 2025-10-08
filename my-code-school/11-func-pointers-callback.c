@@ -9,7 +9,6 @@ void B(void (*ptr)()) {
 }
 
 int main() {
-    void (*p)() = A;
-    B(p);
+    B(A);
     return 0;
 }
