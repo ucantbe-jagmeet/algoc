@@ -7,9 +7,7 @@ void swap (int* a, int* b){
     *b = temp;
 }
 
-
 int main(){
-
     int a= 2 , b= 10;
     swap(&a, &b);
     printf("Numbers after swqpping are: %d and %d\n",a, b);
