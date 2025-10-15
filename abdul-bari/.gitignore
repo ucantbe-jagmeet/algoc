@@ -4,5 +4,8 @@
 # but keep C files
 !*.c
 
+# but keep Cpp files
+!*.cpp
+
 # keep gitignore itself
 !.gitignore
