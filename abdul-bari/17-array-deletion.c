@@ -13,11 +13,6 @@ void DisplayNum(struct Array arr){
         printf("%d ", arr.A[i]);
     }
 };
-void Append(struct Array *arr, int x){
-    if( arr-> length < arr-> size){
-        arr->A[arr->length++] = x;
-    }
-};
 void Delete(struct Array *arr, int index){
     if( index >=0 && index <= arr->length){
         for ( int i = index ; i < arr-> length  ; i ++ ){
