@@ -37,10 +37,27 @@ int BinarySearch(struct Array arr, int key) {
     }
     return -1;
 }
+int RBinSearch(int a[], int l, int h, int key) {
+    int mid;
+
+    if( l <= h){
+        mid = l + (h - l) / 2;
+
+        if (key == a[mid]) {
+            return mid;
+        } else if (key < a[mid]) {
+            return RBinSearch(a, l, mid -1, key);
+        } else {
+            return RBinSearch(a, mid + 1, h, key);
+        }
+    }
+    return -1;
+}
 
 int main() {
     struct Array arr = {{1, 2, 13 , 17, 23, 41, 45, 48, 51, 55,  64, 75, 86}, 20, 13};
-    int index = BinarySearch(arr, 45);
+    // int index = BinarySearch(arr, 45);
+    int index = RBinSearch(arr.A , 0, arr.length - 1, 48);
     printf("index is: %d", index);
     DisplayNum(arr);
 
