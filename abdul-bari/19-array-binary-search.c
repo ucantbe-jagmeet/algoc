@@ -58,7 +58,7 @@ int main() {
     struct Array arr = {{1, 2, 13 , 17, 23, 41, 45, 48, 51, 55,  64, 75}, 20, 12};
     // int index = BinarySearch(arr, 45);
     int index = RBinSearch(arr.A , 0, arr.length, 48);
-    printf("index is: %d", index);
+    printf("\nindex is: %d\n", index);
     DisplayNum(arr);
 
     return 0;
