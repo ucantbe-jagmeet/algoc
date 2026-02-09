@@ -14,7 +14,7 @@ int fun(int n){
 }
 
 int main() {
-    int n =4;
+    int n = 4;
     fun(n);
     return 0;
 }
