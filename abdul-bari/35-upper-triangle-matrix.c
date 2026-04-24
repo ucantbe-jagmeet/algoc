@@ -7,12 +7,12 @@ struct Matrix {
 
 void Set(struct Matrix *m, int i, int j, int x) {
     if (i <= j)
-        m->A[ (((i -1) * m-> n) - (i-2) * (i-1)/2) + (j - i)] = x;
+        m->A[((i - 1) * m->n) - ((i - 2) * (i - 1) / 2) + (j - i)] = x;
 }
 
 int Get(struct Matrix m, int i, int j) {
     if (i <= j)
-        return m.A[ (((i -1) * m.n) - (i-2) * (i-1)/2) + (j - i)];
+        return m.A[((i - 1) * m.n) - ((i - 2) * (i - 1) / 2) + (j - i)];
     else
         return 0;
 }
@@ -21,7 +21,7 @@ void Display(struct Matrix m) {
     for (int i = 1; i <= m.n; i++) {
         for (int j = 1; j <= m.n; j++) {
             if (i <= j)
-                printf("%d ", m.A[ (((i -1) * m.n) - (i-2) * (i-1)/2) + (j - i)]);
+                printf("%d ", m.A[((i - 1) * m.n) - ((i - 2) * (i - 1) / 2) + (j - i)]);
             else
                 printf("0 ");
         }
@@ -34,11 +34,11 @@ int main() {
     m.n = 3;
 
     Set(&m, 1, 1, 5);
-    Set(&m, 2, 1, 4);
-    Set(&m, 2, 2, 6);
-    Set(&m, 3, 1, 11);
-    Set(&m, 3, 2, 12);
-    Set(&m, 3, 3, 14);
+    Set(&m, 1, 2, 4);
+    Set(&m, 1, 3, 6);
+    Set(&m, 2, 2, 2);
+    Set(&m, 2, 3, 1);
+    Set(&m, 3, 3, 3);
 
     printf("%d\n", Get(m, 2, 2));
 
